@@ -21,4 +21,7 @@ body {
   --textColor-white: #ffffff;
   --textColor-primary: #0061df;
   --textColor-gray: #696969;
+
+  /* padding */
+  --padding: 0 130px;
 }
