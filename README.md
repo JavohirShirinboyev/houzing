@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Houzing](https://github.com/JavohirShirinboyev/houzing.git).
+This project was bootstrapped with [Houzing](https://github.com/JavohirShirinboyev/houzing).
 
 ## Available Scripts
 
