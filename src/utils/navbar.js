@@ -20,6 +20,14 @@ const navbar = [
     private: false,
     hidden: false,
   },
+  {
+    id: useId,
+    element: <h1>Sign In</h1>,
+    title: "Sign In",
+    path: "/signin",
+    private: false,
+    hidden: true,
+  },
 ];
 
 export default navbar;

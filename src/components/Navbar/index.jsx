@@ -3,6 +3,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Container, Section, Wrapper, Logo, Link, Main } from "./styled";
 import logoImg from "../../assets/icons/logo.png";
 import navbar from "../../utils/navbar";
+import Button from "../Generic/Button";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -11,24 +12,28 @@ const Navbar = () => {
       <Main>
         <Wrapper>
           <Section onClick={() => navigate("/home")} logo>
-            <Logo to="/home" src={logoImg} />
+            <Logo src={logoImg} />
             <h3>Houzing</h3>
           </Section>
           <Section>
-            {navbar.map(({ title, path }, index) => {
+            {navbar.map(({ title, path, hidden }, index) => {
               return (
-                <Link
-                  className={({ isActive }) => isActive && "active"}
-                  key={index}
-                  to={path}
-                >
-                  {title}
-                </Link>
+                !hidden && (
+                  <Link
+                    className={({ isActive }) => isActive && "active"}
+                    key={index}
+                    to={path}
+                  >
+                    {title}
+                  </Link>
+                )
               );
             })}
           </Section>
           <Section>
-            <button>Login</button>
+            <Button onClick={() => navigate("signin")} type={"dark"}>
+              Sign In
+            </Button>
           </Section>
         </Wrapper>
       </Main>

@@ -9,7 +9,6 @@ const Container = styled.div`
 
 const Main = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
   background: var(--bg-dark);
 `;
