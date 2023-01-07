@@ -5,7 +5,7 @@ import { Container } from "./styled";
 const Home = () => {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>Home Salom Javohir</h1>
       <Input pleceholder={"City"} />
     </Container>
   );
