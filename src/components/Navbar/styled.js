@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   padding: var(--padding);
   height: 64px;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 `;
 
 const Section = styled.div`
@@ -30,6 +30,15 @@ const Section = styled.div`
   cursor: ${({ logo }) => logo && "pointer"};
   .active {
     color: #b8ff06;
+  }
+  .logo {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
   }
 `;
 

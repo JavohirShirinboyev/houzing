@@ -8,7 +8,20 @@ const ContainerInput = styled.input`
   color: #0d263b;
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "14px")};
   height: ${({ height }) => (height ? `${height}px` : "40px")};
-  width: ${({ width }) => (width ? `${width}px` : "200px")};
+  width: ${({ width }) => (width ? `${width}px` : "100%")};
+  padding-left: ${({icon}) => icon ? "35px": "20px"};
 `;
 
-export { ContainerInput };
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: ${({ width }) => (width ? `${width}px` : "100%")};
+  position: relative;
+`
+
+const Icon = styled.div`
+  position: absolute;
+  left: 10px;
+`
+
+export { ContainerInput, Wrapper, Icon };

@@ -4,6 +4,7 @@ import { Container, Section, Wrapper, Logo, Link, Main } from "./styled";
 import logoImg from "../../assets/icons/logo.png";
 import navbar from "../../utils/navbar";
 import Button from "../Generic/Button";
+import Filter from "../Filter";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Navbar = () => {
         <Wrapper>
           <Section onClick={() => navigate("/home")} logo>
             <Logo src={logoImg} />
-            <h3>Houzing</h3>
+            <h3 className="logo">Houzing</h3>
           </Section>
           <Section>
             {navbar.map(({ title, path, hidden }, index) => {
@@ -37,6 +38,7 @@ const Navbar = () => {
           </Section>
         </Wrapper>
       </Main>
+      <Filter />
       <Outlet />
     </Container>
   );
