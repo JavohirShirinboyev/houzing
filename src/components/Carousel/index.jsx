@@ -1,3 +1,4 @@
+// carousel
 import React, { useRef } from "react";
 import { Arrow, Blur, Container, Img, Content } from "./style";
 import { Carousel } from "antd";
