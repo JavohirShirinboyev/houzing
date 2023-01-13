@@ -1,12 +1,12 @@
 import React from "react";
+import CarouselHome from "../Carousel";
 import { Input, Button } from "../Generic";
 import { Container } from "./styled";
 
 const Home = () => {
   return (
     <Container>
-      <h1>Home</h1>
-      <Input pleceholder={"City"} />
+      <CarouselHome />
     </Container>
   );
 };
